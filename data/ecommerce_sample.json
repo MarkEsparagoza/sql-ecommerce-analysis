@@ -1,0 +1,59 @@
+{
+    "metadata": {
+          "dataset": "E-Commerce Sample Data",
+          "author": "Mark Jesson Esparagoza",
+          "description": "Simulated e-commerce dataset for SQL portfolio analysis",
+          "tables": ["customers", "products", "orders", "order_items"]
+    },
+        "customers": [
+          {"customer_id": 1, "name": "Alice Reyes", "email": "alice@email.com", "acquisition_channel": "Email", "signup_date": "2023-01-15"},
+          {"customer_id": 2, "name": "Ben Santos", "email": "ben@email.com", "acquisition_channel": "Social Media", "signup_date": "2023-02-20"},
+          {"customer_id": 3, "name": "Cara Liu", "email": "cara@email.com", "acquisition_channel": "Organic Search", "signup_date": "2023-03-05"},
+          {"customer_id": 4, "name": "Dan Morales", "email": "dan@email.com", "acquisition_channel": "Paid Ads", "signup_date": "2023-03-18"},
+          {"customer_id": 5, "name": "Eva Torres", "email": "eva@email.com", "acquisition_channel": "Email", "signup_date": "2023-04-02"},
+          {"customer_id": 6, "name": "Frank Lim", "email": "frank@email.com", "acquisition_channel": "Referral", "signup_date": "2023-04-20"},
+          {"customer_id": 7, "name": "Grace Park", "email": "grace@email.com", "acquisition_channel": "Organic Search", "signup_date": "2023-05-10"},
+          {"customer_id": 8, "name": "Henry Tan", "email": "henry@email.com", "acquisition_channel": "Social Media", "signup_date": "2023-06-01"}
+            ],
+            "products": [
+              {"product_id": 101, "name": "Wireless Headphones", "category": "Electronics", "cost_price": 45.00, "list_price": 89.99},
+              {"product_id": 102, "name": "Running Shoes", "category": "Apparel", "cost_price": 32.00, "list_price": 74.99},
+              {"product_id": 103, "name": "Yoga Mat", "category": "Sports", "cost_price": 15.00, "list_price": 34.99},
+              {"product_id": 104, "name": "Smart Watch", "category": "Electronics", "cost_price": 80.00, "list_price": 199.99},
+              {"product_id": 105, "name": "Protein Powder", "category": "Health", "cost_price": 22.00, "list_price": 49.99},
+              {"product_id": 106, "name": "Desk Lamp", "category": "Home", "cost_price": 18.00, "list_price": 39.99},
+              {"product_id": 107, "name": "Backpack", "category": "Apparel", "cost_price": 28.00, "list_price": 59.99},
+              {"product_id": 108, "name": "Blender", "category": "Home", "cost_price": 35.00, "list_price": 79.99}
+                ],
+                "orders": [
+                  {"order_id": 1001, "customer_id": 1, "order_date": "2024-01-10", "status": "Completed"},
+                  {"order_id": 1002, "customer_id": 2, "order_date": "2024-01-15", "status": "Completed"},
+                  {"order_id": 1003, "customer_id": 3, "order_date": "2024-02-05", "status": "Completed"},
+                  {"order_id": 1004, "customer_id": 1, "order_date": "2024-02-20", "status": "Refunded"},
+                  {"order_id": 1005, "customer_id": 4, "order_date": "2024-03-08", "status": "Completed"},
+                  {"order_id": 1006, "customer_id": 5, "order_date": "2024-03-22", "status": "Completed"},
+                  {"order_id": 1007, "customer_id": 6, "order_date": "2024-04-10", "status": "Completed"},
+                  {"order_id": 1008, "customer_id": 2, "order_date": "2024-04-25", "status": "Completed"},
+                  {"order_id": 1009, "customer_id": 7, "order_date": "2024-05-03", "status": "Completed"},
+                  {"order_id": 1010, "customer_id": 3, "order_date": "2024-05-18", "status": "Refunded"},
+                  {"order_id": 1011, "customer_id": 8, "order_date": "2024-06-07", "status": "Completed"},
+                  {"order_id": 1012, "customer_id": 1, "order_date": "2024-06-20", "status": "Completed"}
+                    ],
+                    "order_items": [
+                      {"order_item_id": 1, "order_id": 1001, "product_id": 101, "quantity": 1, "unit_price": 89.99},
+                      {"order_item_id": 2, "order_id": 1001, "product_id": 105, "quantity": 2, "unit_price": 49.99},
+                      {"order_item_id": 3, "order_id": 1002, "product_id": 104, "quantity": 1, "unit_price": 199.99},
+                      {"order_item_id": 4, "order_id": 1003, "product_id": 102, "quantity": 1, "unit_price": 74.99},
+                      {"order_item_id": 5, "order_id": 1003, "product_id": 103, "quantity": 2, "unit_price": 34.99},
+                      {"order_item_id": 6, "order_id": 1004, "product_id": 108, "quantity": 1, "unit_price": 79.99},
+                      {"order_item_id": 7, "order_id": 1005, "product_id": 101, "quantity": 2, "unit_price": 89.99},
+                      {"order_item_id": 8, "order_id": 1006, "product_id": 106, "quantity": 1, "unit_price": 39.99},
+                      {"order_item_id": 9, "order_id": 1006, "product_id": 107, "quantity": 1, "unit_price": 59.99},
+                      {"order_item_id": 10, "order_id": 1007, "product_id": 104, "quantity": 1, "unit_price": 199.99},
+                      {"order_item_id": 11, "order_id": 1008, "product_id": 105, "quantity": 3, "unit_price": 49.99},
+                      {"order_item_id": 12, "order_id": 1009, "product_id": 102, "quantity": 1, "unit_price": 74.99},
+                      {"order_item_id": 13, "order_id": 1010, "product_id": 103, "quantity": 1, "unit_price": 34.99},
+                      {"order_item_id": 14, "order_id": 1011, "product_id": 101, "quantity": 1, "unit_price": 89.99},
+                      {"order_item_id": 15, "order_id": 1012, "product_id": 108, "quantity": 2, "unit_price": 79.99}
+                        ]
+}
